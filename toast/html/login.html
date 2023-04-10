@@ -7,29 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="../css/login.css">
+    <script type="text/javascript" src="../js/login.js"></script>
 </head>
 
 <body>
-    <div class="login-box">
-        <h2>Login</h2>
-        <form>
-            <div class="user-box">
-                <input type="text" name="" required="">
-                <label>Username</label>
-            </div>
-            <div class="user-box">
-                <input type="password" name="" required="">
-                <label>Password</label>
-            </div>
-            <a href="#">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                Submit
-            </a>
-        </form>
-    </div>
+    <form class="login-form">
+        <p class="login-text">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock-fill" viewBox="0 0 16 16">
+                <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/>
+            </svg>
+        </p>
+        <input type="email" class="login-username" autofocus="true" required="true" placeholder="Email" />
+        <input type="password" class="login-password" required="true" placeholder="Password" />
+        <input type="submit" name="Login" value="Login" class="login-submit" />
+    </form>
+    <a href="../html/forget.html" class="login-forgot-pass">forgot password?</a>
+    <div class="underlay-photo"></div>
+    <div class="underlay-black"></div>
 </body>
 
 </html>

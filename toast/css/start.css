@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
-
+@font-face {
+  font-family: 'Dovemayo_gothic';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.1/Dovemayo_gothic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
 :root {
     --primary-color: #3a4052;
 }
@@ -68,6 +73,7 @@
     position:relative;
     height:60px;
     font-size:1.6em;
+    font-family: Dovemayo_gothic;
     padding:0 2em;
     cursor:pointer;
     transition:800ms ease all;
